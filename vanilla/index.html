@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>jsPlumbToolkit - Mindmap Builder</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="node_modules/@jsplumbtoolkit/browser-ui/css/jsplumbtoolkit.css">
+        <link rel="stylesheet" href="node_modules/@jsplumbtoolkit/browser-ui/css/jsplumbtoolkit-controls.css">
+
+        <!-- /CSS -->
+        <link rel="stylesheet" href="./app.css">
+
+    </head>
+    <body>
+
+        <div class="jtk-demo-main" id="jtk-demo-flowchart">
+
+            <!-- main drawing area -->
+            <div class="jtk-demo-canvas">
+                <!-- controls -->
+                <div class="jtk-controls-container"></div>
+                <!-- miniview -->
+                <div class="miniview"></div>
+            </div>
+            <div class="jtk-demo-rhs">
+
+                <div class="description">
+                    <h3>Mindmap Builder</h3>
+                    <ul>
+                        <li>Click the note icon in the upper left to inspect/edit a node. </li>
+                        <li>Click the trashcan icon to delete a node</li>
+                        <li>Click the + button to add a new subtopic. Subtopics can be added to the left or right of the main node.</li>
+                    </ul>
+                </div>
+
+                <hr/>
+
+                <!-- node/edge inspector. -->
+                <div class="inspector"></div>
+
+            </div>
+
+
+        </div>
+
+        <!-- the demo code -->
+        <script src="bundle.js"></script>
+
+    </body>
+</html>
