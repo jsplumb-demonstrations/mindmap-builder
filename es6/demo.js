@@ -1,9 +1,8 @@
 import {
     newInstance,
     ready,
-    SegmentedConnector,
+    StraightConnector,
     AnchorLocations,
-    BlankEndpoint,
     EVENT_TAP, uuid,
     ControlsComponent,
     EVENT_GRAPH_CLEARED,
@@ -112,15 +111,14 @@ ready(() => {
         ],
         defaults:{
             connector:{
-                type:SegmentedConnector.type,
+                type:StraightConnector.type,
                 options:{
                     stub:20
                 }
             },
             anchor:[
                 AnchorLocations.Left, AnchorLocations.Right
-            ],
-            endpoint:BlankEndpoint.type
+            ]
         },
         plugins:[
             {
