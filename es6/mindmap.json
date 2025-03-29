@@ -2,61 +2,80 @@
   "name": "test dataset",
   "data":{
     "id": "1",
-    "label": "Main Topic Main Topic",
-    "notes": "this is the main topic",
+    "label": "JSPLUMB",
+    "notes": "The most versatile and configurable diagramming library",
     "right": [
       {
         "id": "2",
-        "label": "Topic 2 Topic 2",
-        "notes": "",
+        "label": "Layouts",
+        "notes": "JsPlumb ships with a number of layouts, and it's simple to create your own",
         "children": [
           {
             "id": "9",
-            "label": "Topic 9 RIGHT",
+            "label": "Force Directed",
             "notes": ""
           },
           {
             "id": "10",
-            "label": "Topic 10",
+            "label": "Hierarchy",
             "notes": ""
           },
           {
             "id": "11",
-            "label": "Topic 11",
+            "label": "Balloon",
             "notes": ""
           }
         ]
       },
       {
         "id": "3",
-        "label": "Topic 3 Topic 3",
-        "notes": ""
+        "label": "Surface",
+        "notes": "The Surface component offers the smoothest pan/zoom for miles around and a load of useful plugins",
+        "children": [
+          {
+            "id": "12",
+            "label": "Plugins",
+            "notes": "",
+            "children": [
+              {
+                "id": "13",
+                "label": "Miniview",
+                "notes": "Show a mini rendering of your canvas and use it to pan your content around"
+              },
+              {
+                "id": "14",
+                "label": "Backgrounds",
+                "notes": "Image backgrounds, tiled image backgrounds, generated grids and more"
+              }
+            ]
+          }
+        ]
       }
     ],
     "left": [
       {
         "id": "4",
-        "label": "Topic 4 Topic 4 (LEFT)",
-        "notes": ""
+        "label": "CSS",
+        "notes": "Fully configurable via the wealth of CSS classes exposed by the various UI components"
       },
       {
         "id": "5",
-        "label": "Topic 5 Topic 5 (LEFT)",
-        "notes": "",
+        "label": "Model",
+        "notes": "Backed by a directed/undirected graph, JsPlumb lets you work with your data at the model level",
         "children": [
           {
             "id": "6",
-            "label": "Topic 6 Topic 6 (LEFT)",
+            "label": "Edges",
             "notes": ""
           },
           {
             "id": "7",
-            "label": "Topic 7 Topic 7 (LEFT)",
+            "label": "Nodes",
             "notes": ""
           },
           {
             "id": "8",
-            "label": "Topic 8 Topic 8 (LEFT)",
+            "label": "Groups",
             "notes": ""
           }
         ]

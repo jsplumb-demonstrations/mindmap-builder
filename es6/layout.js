@@ -57,7 +57,7 @@ export class MindmapLayout extends AbstractLayout {
                             return d.getAllEdges().map(e => e.target)
                         }
                     },
-                    padding:{x:250, y:100},
+                    padding:{x:150, y:80},
                     absolutePositionFunction:(v) => null,
                     axisIndex:1
                 })
