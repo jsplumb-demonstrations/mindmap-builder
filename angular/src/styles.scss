@@ -1,0 +1,137 @@
+@import "../node_modules/@jsplumbtoolkit/browser-ui/css/jsplumbtoolkit.css";
+@import "../node_modules/@jsplumbtoolkit/browser-ui-angular/css/jsplumbtoolkit-angular.css";
+
+body * {
+  font-family:sans-serif;
+}
+
+.jtk-demo-main {
+  height:100vh;
+  width:100vw;
+  position:relative;
+}
+
+jsplumb-surface, .jtk-surface {
+  width:100%;
+  height:100%;
+}
+
+jsplumb-controls {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+jsplumb-miniview {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+app-inspector {
+  box-shadow: 0 0 10px #555;
+  display: block;
+  position: fixed;
+  z-index: 100;
+  padding: 1rem;
+  left: 1rem;
+  bottom: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  width:250px;
+
+  label, input, textarea {
+    margin:0.5rem 0;
+    width:100%;
+  }
+
+  &.jtk-inspector-inactive {
+    display:none;
+  }
+}
+
+.jtk-miniview {
+  position:relative;
+}
+
+.jtk-mindmap-vertex {
+  width:150px;
+  height:90px;
+  background-color:#309fb6;
+  color:white;
+  font-weight:600;
+  border:0.1rem solid;
+  padding:0.25rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.jtk-surface-selected-element {
+  outline:1px solid orangered;
+  outline-offset: 1rem;
+}
+
+.jtk-add-mindmap-child {
+  position:absolute;
+
+  cursor:pointer;
+  bottom:0.5rem;
+
+}
+
+.jtk-add-mindmap-child:after {
+  content:'+';
+  text-align:center;
+}
+
+.jtk-add-mindmap-child:hover {
+  color:orangered;
+}
+
+
+.jtk-add-mindmap-child[data-direction='left'] {
+  left:0.5rem;
+}
+
+.jtk-add-mindmap-child[data-direction='right'] {
+  right:0.5rem;
+}
+
+.jtk-mindmap-info {
+  cursor:pointer;
+  position:absolute;
+  left:0.5rem;
+  top:0.5rem;
+}
+
+.jtk-mindmap-info:after {
+  content:" i ";
+  font-weight:600;
+}
+
+.jtk-mindmap-info:hover {
+  color:orangered;
+}
+
+.jtk-mindmap-delete {
+  position:absolute;
+  cursor:pointer;
+  color:white;
+  top:0.5rem;
+  right:0.5rem;
+}
+
+.jtk-mindmap-delete:after {
+  content:"✖";
+  font-weight:300;
+}
+
+.jtk-mindmap-delete:hover {
+  color:orangered;
+}
+

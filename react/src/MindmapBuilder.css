@@ -1,0 +1,83 @@
+/* ----------------- mindmap node styles ------------*/
+
+
+.jtk-mindmap-vertex {
+    width:150px;
+    height:90px;
+    background-color:#309fb6;
+    color:white;
+    font-weight:600;
+    border:0.1rem solid;
+    padding:0.25rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.jtk-surface-selected-element {
+    outline:1px solid orangered;
+    outline-offset: 1rem;
+}
+
+.jtk-add-mindmap-child {
+    position:absolute;
+
+    cursor:pointer;
+    bottom:0.5rem;
+
+}
+
+.jtk-add-mindmap-child:after {
+    content:'+';
+    text-align:center;
+}
+
+.jtk-add-mindmap-child:hover {
+    color:orangered;
+}
+
+
+.jtk-add-mindmap-child[data-direction='left'] {
+    left:0.5rem;
+}
+
+.jtk-add-mindmap-child[data-direction='right'] {
+    right:0.5rem;
+}
+
+.jtk-mindmap-info {
+    cursor:pointer;
+    position:absolute;
+    left:0.5rem;
+    top:0.5rem;
+}
+
+.jtk-mindmap-info:after {
+    content:" i ";
+    font-weight:600;
+}
+
+.jtk-mindmap-info:hover {
+    color:orangered;
+}
+
+.jtk-mindmap-delete {
+    position:absolute;
+    cursor:pointer;
+    color:white;
+    top:0.5rem;
+    right:0.5rem;
+}
+
+.jtk-mindmap-delete:after {
+    content:"✖";
+    font-weight:300;
+}
+
+.jtk-mindmap-delete:hover {
+    color:orangered;
+}

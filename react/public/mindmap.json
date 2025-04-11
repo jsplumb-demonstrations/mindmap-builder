@@ -1,0 +1,85 @@
+{
+  "name": "test dataset",
+  "data":{
+    "id": "1",
+    "label": "JSPLUMB",
+    "notes": "The most versatile and configurable diagramming library",
+    "right": [
+      {
+        "id": "2",
+        "label": "Layouts",
+        "notes": "JsPlumb ships with a number of layouts, and it's simple to create your own",
+        "children": [
+          {
+            "id": "9",
+            "label": "Force Directed",
+            "notes": ""
+          },
+          {
+            "id": "10",
+            "label": "Hierarchy",
+            "notes": ""
+          },
+          {
+            "id": "11",
+            "label": "Balloon",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "label": "Surface",
+        "notes": "The Surface component offers the smoothest pan/zoom for miles around and a load of useful plugins",
+        "children": [
+          {
+            "id": "12",
+            "label": "Plugins",
+            "notes": "",
+            "children": [
+              {
+                "id": "13",
+                "label": "Miniview",
+                "notes": "Show a mini rendering of your canvas and use it to pan your content around"
+              },
+              {
+                "id": "14",
+                "label": "Backgrounds",
+                "notes": "Image backgrounds, tiled image backgrounds, generated grids and more"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "left": [
+      {
+        "id": "4",
+        "label": "CSS",
+        "notes": "Fully configurable via the wealth of CSS classes exposed by the various UI components"
+      },
+      {
+        "id": "5",
+        "label": "Model",
+        "notes": "Backed by a directed/undirected graph, JsPlumb lets you work with your data at the model level",
+        "children": [
+          {
+            "id": "6",
+            "label": "Edges",
+            "notes": ""
+          },
+          {
+            "id": "7",
+            "label": "Nodes",
+            "notes": ""
+          },
+          {
+            "id": "8",
+            "label": "Groups",
+            "notes": ""
+          }
+        ]
+      }
+    ]
+  }
+}
