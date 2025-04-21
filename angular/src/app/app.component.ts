@@ -22,7 +22,6 @@ import {MindmapLayout} from "./layout"
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements AfterViewInit, OnInit {
-  title = 'angular';
 
   @ViewChild(SurfaceComponent) surfaceComponent!: SurfaceComponent;
 
@@ -72,18 +71,14 @@ export class AppComponent implements AfterViewInit, OnInit {
 
   ngOnInit() {
     Layouts.register(MINDMAP_LAYOUT, MindmapLayout)
+    registerParser(MINDMAP_JSON, mindmapJsonParser)
+    registerExporter(MINDMAP_JSON, mindmapJsonExporter)
   }
 
   ngAfterViewInit() {
 
     this.surface = this.surfaceComponent.surface
     this.toolkit = this.surfaceComponent.toolkit
-
-
-
-    registerParser(MINDMAP_JSON, mindmapJsonParser)
-    registerExporter(MINDMAP_JSON, mindmapJsonExporter)
-
     this.toolkit.load({
       url:"/mindmap.json",
       type:MINDMAP_JSON
