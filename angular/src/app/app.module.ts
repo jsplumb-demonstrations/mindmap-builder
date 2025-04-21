@@ -7,12 +7,12 @@ import { jsPlumbToolkitModule } from "@jsplumbtoolkit/browser-ui-angular"
 import {MainComponent} from "./main.component"
 import {SubtopicComponent} from "./subtopic.component"
 import {MindmapService} from "./mindmap.service"
-import {InspectorComponent} from './inspector.component'
+import {MindmapInspectorComponent} from './inspector.component'
 
 
 @NgModule({
     declarations: [
-        AppComponent, SubtopicComponent, MainComponent, InspectorComponent
+        AppComponent, SubtopicComponent, MainComponent, MindmapInspectorComponent
 
     ],
     imports: [
