@@ -8,7 +8,7 @@ import {PROPERTY_LABEL, PROPERTY_NOTES} from "./definitions"
     standalone:false,
     template: `<div class="inspector">
         
-        @if(currentType !== '') {               
+        @if(currentObj !== null) {               
           <div class="jtk-inspector jtk-node-inspector">
             <div class="jtk-inspector jtk-node-inspector">
               <div class="jtk-inspector-section">
